@@ -1,1 +1,134 @@
-html,body,div,h1,h2,h3,h4,h5,h6,p,a,ul,ol,li,dl,dd,dt,img,form,fieldset,legend{margin:0px;padding:0px;font-size:14px}li{list-style:none}a{text-decoration:none;color:#333333;cursor:pointer}.header{width:100%;height:216px}.header .head{width:100%;height:36px;background:#fafafa;display:flex;justify-content:space-between;align-items:center}.header .head .tips{margin-left:76.5px}.header .head .links{margin-right:76.5px;width:209px;height:36px}.header .head .links ul li{float:left;display:block;height:36px;line-height:36px}.header .head .links ul li a{padding:0 10px;color:black;border-right:1px solid #dddddd}.header .head .links ul li a:hover{color:#ff3300}.header .headerBanner{width:100%}.header .headerBanner img{width:100%;float:left}.header>.logo{width:1110px;height:126px;margin:0 auto;display:flex;justify-content:space-between}.header>.logo h1{width:228px;height:70px;margin-top:18px}.header>.logo h1 a{display:block;width:228px;height:70px}.header>.logo h1 a span{display:none}.header>.logo .headerSearch{width:442px;height:40px;margin-top:38px;position:relative}.header>.logo .headerSearch i{position:absolute;width:28px;height:23px;top:10px;left:10px;background:url(../img/icon_search.png) no-repeat;overflow:hidden}.header>.logo .headerSearch>.text{border:1px solid #ccc;width:300px;height:38px;line-height:39px;font-size:14px;color:#666;text-align:left;padding-left:40px;float:left}.header>.logo .headerSearch>.search-btn{background-color:#0065b3;width:100px;height:40px;color:white;cursor:pointer;font-size:16px;float:left;border:none}.header>.logo .headerSearch .hotSearch{clear:both;width:442px;height:40px;line-height:40px;padding-top:6px;color:#A8A5A7;font-size:13px}.header>.logo .headerSearch .hotSearch a:hover{color:#007258}.header>.logo .headerShopCart{float:right;height:32px;width:165px;margin-top:42px;text-align:center;background:url(../img/cart_blue.png) no-repeat;overflow:hidden}.header>.logo .headerShopCart>a{color:white;display:block;height:32px;font-size:12px;line-height:32px;width:124px;padding-left:10px;overflow:hidden;float:left}.header>.logo .headerShopCart>span{display:block;float:right;font-size:12px;color:#ff3300;font-weight:bold;width:31px;height:32px;line-height:32px;text-align:center;cursor:pointer}
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, dl, dd, dt, img, form, fieldset, legend {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #333333;
+  cursor: pointer; }
+
+.header {
+  width: 100%;
+  height: 216px; }
+  .header .head {
+    width: 100%;
+    height: 36px;
+    background: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header .head .tips {
+      margin-left: 76.5px; }
+    .header .head .links {
+      margin-right: 76.5px;
+      width: 209px;
+      height: 36px; }
+      .header .head .links ul li {
+        float: left;
+        display: block;
+        height: 36px;
+        line-height: 36px; }
+        .header .head .links ul li a {
+          padding: 0 10px;
+          color: black;
+          border-right: 1px solid #dddddd; }
+          .header .head .links ul li a:hover {
+            color: #ff3300; }
+  .header .headerBanner {
+    width: 100%; }
+    .header .headerBanner img {
+      width: 100%;
+      float: left; }
+  .header > .logo {
+    width: 1110px;
+    height: 126px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .header > .logo h1 {
+      width: 228px;
+      height: 70px;
+      margin-top: 18px; }
+      .header > .logo h1 a {
+        display: block;
+        width: 228px;
+        height: 70px; }
+        .header > .logo h1 a span {
+          display: none; }
+    .header > .logo .headerSearch {
+      width: 442px;
+      height: 40px;
+      margin-top: 38px;
+      position: relative; }
+      .header > .logo .headerSearch i {
+        position: absolute;
+        width: 28px;
+        height: 23px;
+        top: 10px;
+        left: 10px;
+        background: url(../img/icon_search.png) no-repeat;
+        overflow: hidden; }
+      .header > .logo .headerSearch > .text {
+        border: 1px solid #ccc;
+        width: 300px;
+        height: 38px;
+        line-height: 39px;
+        font-size: 14px;
+        color: #666;
+        text-align: left;
+        padding-left: 40px;
+        float: left; }
+      .header > .logo .headerSearch > .search-btn {
+        background-color: #0065b3;
+        width: 100px;
+        height: 40px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        float: left;
+        border: none; }
+      .header > .logo .headerSearch .hotSearch {
+        clear: both;
+        width: 442px;
+        height: 40px;
+        line-height: 40px;
+        padding-top: 6px;
+        color: #A8A5A7;
+        font-size: 13px; }
+        .header > .logo .headerSearch .hotSearch a:hover {
+          color: #007258; }
+    .header > .logo .headerShopCart {
+      float: right;
+      height: 32px;
+      width: 165px;
+      margin-top: 42px;
+      text-align: center;
+      background: url(../img/cart_blue.png) no-repeat;
+      overflow: hidden; }
+      .header > .logo .headerShopCart > a {
+        color: white;
+        display: block;
+        height: 32px;
+        font-size: 12px;
+        line-height: 32px;
+        width: 124px;
+        padding-left: 10px;
+        overflow: hidden;
+        float: left; }
+      .header > .logo .headerShopCart > span {
+        display: block;
+        float: right;
+        font-size: 12px;
+        color: #ff3300;
+        font-weight: bold;
+        width: 31px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        cursor: pointer; }
+
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,OAAO;EACN,KAAK,EAAC,IAAI;EACV,WAAG;IACF,OAAO,EAAC,KAAK;IACb,KAAK,EAAC,IAAI",
+"sources": ["../sass/banner.scss"],
+"names": [],
+"file": "banner.css"
+}
