@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/banner.css">
+	<link rel="stylesheet" type="text/css" href="css/content.css">
+
+	<script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+	</div>
+	<!-- nav -->
+	<div class="nav">
+		<div class="menu">
+			<i></i>
+			<span>商品分类</span>
+		</div>
+		<ul>
+			<li><a href="##">首页</a></li>
+			<li><a href="##">运动休闲鞋</a></li>
+			<li><a href="##">男鞋</a></li>
+			<li><a href="##">女鞋</a></li>
+			<li><a href="##">帆布鞋</a></li>
+			<li><a href="##">户外鞋</a></li>
+			<li><a href="##">VIP专区</a></li>
+			<li><a href="##">品牌</a></li>
+		</ul>
+	</div>
+	<!-- banner -->
+	<div class="banner">
+		<img src="img/banner.jpg">
+	</div>
+	<!-- content -->
+	<div class="content">
+		<!-- con1 -->
+		<div class="con1">
+			<img src="img/zone.png">
+			<div class="list">
+				<!-- 倒计时 -->
+				<div class="seckill">
+					<a></a>
+					<div class="seckill_time">
+						10:00
+					</div>
+					<div class="setTime">
+						<b>正在秒杀</b>
+						<b>距离结束<span class="day">0</span>天<span class="timer"></span></b>
+					</div>
+					<a></a>
+				</div>
+				<!-- ZONE列表 -->
+				<div class="seckill_bottom"></div>
+				<script type="text/html" id="zone_list">
+
+					{{each zones as zone i}}
+					<dl>
+						<dt>
+							<a href="##">
+								<img src="{{zone.img}}">
+							</a>
+							<p>{{zone.title}}</p>
+						</dt>
+						<dd>
+							<span><em>￥</em><i>{{zone.price}}</i> <b>￥{{zone.original}}</b></span>
+							<a href="##">立即抢购</a>
+						</dd>
+					</dl>
+					{{/each}}
+				</script>
+			</div>
+		</div>
+
+		<!-- con2 -->
+		<div class="con2">
+			<div class="con2_head">
+				<img src="img/con2_head.png">
+			</div>
+			<div class="con2_body">
+				<div class="new">
+					<img src="img/con2_new.gif">
+				</div>
+				<div class="sport">
+					<img src="img/sports.png">
+				</div>
+				<div class="women">
+					<img src="img/women.png">
+				</div>
+				<div class="man">
+					<img src="img/man.png">
+				</div>
+			</div>
+			<div class="con2_foot">
+				<ul>
+					<li>
+						<a href="##">
+							<img src="img/con2_foot1.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="##">
+							<img src="img/con2_foot2.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="##">
+							<img src="img/con2_foot3.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="##">
+							<img src="img/con2_foot4.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="##">
+							<img src="img/con2_foot5.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- con3 -->
+		<div class="con3">
+			<div class="con3_banner">
+				<a href="##">
+					<img src="img/con3_banner1.png">
+					<img src="img/con3_banner2.jpg">
+					<img src="img/con3_banner3.png">
+				</a>
+			</div>
+			<div class="con3_body"></div>
+		</div>
+
+		<!-- con4 -->
+		<div class="con4">
+			<div class="con4_banner">
+				<a href="##">
+					<img src="img/con4_banner.png">
+				</a>
+			</div>
+			<div class="con4_body"></div>
+		</div>
+
+
+		<!-- con5 -->
+		<div class="con5">
+			<div class="con5_banner">
+				<a href="##">
+					<img src="img/con5_banner.png">
+				</a>
+			</div>
+			<div class="con5_body"></div>
+		</div>
+
+		<!-- con6 -->
+		<div class="con6">
+			<div class="con6_banner">
+				<a href="##">
+					<img src="img/con6_banner.png">
+				</a>
+			</div>
+		</div>
+
+		<!-- 首页专区模板 -->
+		<script type="text/html" id="index_data">
+			{{each datas as data index}}
+				<a href="##"><img src="{{data.img}}"></a>
+			{{/each}}
+		</script>
+	</div>
+
+	
+	<!-- footer -->
+	<div class="footer">
+		
+	</div>
+
+	
+	<script type="text/javascript" src="lib/arttemplate/template.js"></script>
+	<script type="text/javascript" src="lib/require/require.js" data-main="js/index.js"></script>
+	
+</body>
+</html>

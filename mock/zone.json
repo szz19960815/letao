@@ -1,0 +1,11 @@
+{
+	"status" : 1,
+	"message" : "success",
+	"data" : [
+		{"id":1, "img":"/letao/img/zone1.jpg", "title":"清仓特卖 中性 休闲帆布鞋 LTCQ-002" ,"price":29.9, "original":199},
+		{"id":2, "img":"/letao/img/zone2.jpg", "title":"清仓特卖 中性 休闲帆布鞋 LTCQ-003" ,"price":39.9, "original":299},
+		{"id":3, "img":"/letao/img/zone3.jpg", "title":"清仓特卖 中性 休闲帆布鞋 LTCQ-004" ,"price":49.9, "original":399},
+		{"id":4, "img":"/letao/img/zone4.jpg", "title":"清仓特卖 中性 休闲帆布鞋 LTCQ-005" ,"price":59.9, "original":499},
+		{"id":5, "img":"/letao/img/zone1.jpg", "title":"清仓特卖 中性 休闲帆布鞋 LTCQ-006" ,"price":59.9, "original":499}
+	]
+}

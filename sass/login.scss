@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+html,body,div,h1,h2,h3,h4,h5,h6,p,a,ul,ol,li,dl,dd,dt,img,form,fieldset,legend{
+	margin:0px;
+	padding:0px;
+	font-size:14px;
+}
+
+li{
+	list-style:none;
+}
+
+a{
+	text-decoration: none;
+	color:#333333;
+	cursor:pointer;
+}
+
+.header{
+	width:100%;
+	height:106px;
+
+	&>h1{
+		width:1110px;
+		height:106px;
+		margin:0 auto;
+		line-height:106px;
+
+		&>a{
+			display:block;
+			width:228px;
+			height:106px;
+			float:left;
+			line-height:106px;
+
+			&>img{
+				margin-top:18px;
+			}
+			&>span{
+				display:none;
+			}
+		}
+		&>span{
+			float:left;
+			font-size:26px;
+			font-weight:normal;
+			color:#666;
+			margin-left:16px;
+		}
+	}
+
+}
+
+.content{
+	width:100%;
+	height:662px;
+	overflow:hidden;
+	background:url(../img/loginAndRegister.png) no-repeat left center;
+
+	.clearBox{
+		width:1110px;
+		height:382px;
+		margin:120px 0px 160px;
+		
+		h2{
+			height: 40px;
+	    line-height: 40px;
+	    border-bottom: 1px solid #dcdcdc;
+	    padding-left: 35px;
+	    font-size: 14px;
+		}
+		.login{
+			float:right;
+			width:360px;
+			height:380px;
+			background:white;
+			box-shadow: 0px 0px 10px #666;
+			border: 1px solid #dcdcdc;
+
+			form{
+				width:360px;
+				height:340px;
+
+				input{
+					display:block;
+					margin-left:42px;
+					width:306px;
+					height:36px;
+					margin:0 auto;
+					margin-bottom:20px;	
+					border: 1px solid #dcdcdc;	
+				}
+				#user{
+					width:266px;
+					padding-left:38px;
+					margin-top:40px;
+					background:url(../img/login_user.png) no-repeat 12px 11px;
+				}
+				#password{
+					width:266px;
+					padding-left:38px;
+					background:url(../img/login_password.png) no-repeat 12px 11px;
+				}
+				#remember{
+					display:inline-block;
+					width:13px;
+					height:13px;
+					margin-left:27px;
+				}
+				#login_sub{
+					background:#0065b3;
+					color:white;
+					line-height: 36px;
+    			margin-top: 25px;
+    			border: none;
+    			font-size:18px;
+    			cursor:pointer;
+				}
+			}
+		}
+	}
+
+}
+
+.footer{
+	width:100%;
+	height:43px;
+
+	&>p{
+		height:43px;
+		width:100%;
+		text-align:center;
+		font-size:12px;
+		color:rgb(102, 102, 102);
+
+		&>a{
+			color:rgb(209, 0, 66);
+		}
+	}
+}

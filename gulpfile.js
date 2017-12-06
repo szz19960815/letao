@@ -4,8 +4,8 @@ var gulp = require("gulp"),
 
 gulp.task("sass",function(){
 	gulp.src("sass/*.scss")
-		.pipe(sass({outputstyle:compressed}))
-		.pipe(gulp.dest("css")),
+		.pipe(sass({outputStyle: 'compressed'}))
+		.pipe(gulp.dest("css"))
 		.pipe(livereload());
 });
 
