@@ -55,6 +55,7 @@
 	        url:"http://localhost/letao/php/destroy_user.php",
 	        type: "GET",
 	        success: function(data){
+	        	delCookie("PHPSESSID")
 	        	if(data === "0"){
 	        		$("#login2").css("display",'none');
 				      $("#login1").css("display",'inline');
@@ -68,6 +69,13 @@
 	      });
 	  	}
 	  });
+	  function delCookie(name){
+			var exp = new Date();
+			exp.setTime(exp.getTime() - 1);
+			var cval=getCookie(name);
+			if(cval!=null)
+			document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+		}
 	</script>
 	<div class="headerSearch">
 		<i></i>
@@ -86,7 +94,7 @@
 	</div>
 
 	<div class="headerShopCart">
-		<a href="/letao/html/cart.html">我的购物车</a>
+		<a href="##">我的购物车</a>
 		<span>0</span>
 	</div>
 </div>

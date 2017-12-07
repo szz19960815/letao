@@ -50,7 +50,12 @@
 					</div>
 					<div class="setTime">
 						<b>正在秒杀</b>
-						<b>距离结束<span class="day">0</span>天<span class="timer"></span></b>
+						<b>距结束
+							<span id="day">0</span>天
+							<span id="hour"></span>:
+							<span id="minute"></span>:
+							<span id="second"></span>
+						</b>
 					</div>
 					<a></a>
 				</div>
@@ -68,7 +73,7 @@
 						</dt>
 						<dd>
 							<span><em>￥</em><i>{{zone.price}}</i> <b>￥{{zone.original}}</b></span>
-							<a href="##">立即抢购</a>
+							<a onclick="add_cart()">立即抢购</a>
 						</dd>
 					</dl>
 					{{/each}}
@@ -186,5 +191,26 @@
 	<script type="text/javascript" src="lib/arttemplate/template.js"></script>
 	<script type="text/javascript" src="lib/require/require.js" data-main="js/index.js"></script>
 	
+	<script type="text/javascript">
+		//计时器
+		var endTime = new Date("2017-12-13T00:00:00");
+		var end_time = endTime.getTime();
+		var timer = setInterval(function(){
+			var now_time = Date.now();
+			var diff = end_time - now_time;
+			var date = new Date(now_time);
+			var _Day = Math.floor(diff / 86400000);
+			var H = ("0" + Math.floor((diff % 86400000) / 3600000)).slice(-2);
+			var M = ("0" + Math.floor((diff % 3600000) / 60000)).slice(-2);
+			var S = ("0" + (String(Math.floor((diff % 3600000) % 60000))).slice(0,2)).slice(-2);
+			
+			//设置倒计时在页面中的显示
+			$("#day").html(_Day);
+			$("#hour").html(H);
+			$("#minute").html(M);
+			$("#second").html(S);
+		},1000);
+	</script>
+
 </body>
 </html>

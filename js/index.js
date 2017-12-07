@@ -19,6 +19,8 @@ require(["config"],function(){
 	});
 });
 
+
+
 require(["config"],function(){
 		require(["jquery","template"],function(){
 			index_img("/letao/mock/sport.json", "index_data", $(".con3_body"));
@@ -26,6 +28,16 @@ require(["config"],function(){
 			index_img("/letao/mock/women.json", "index_data", $(".con5_body"));
 	});
 });
+
+function add_cart() {
+	if($(".links ul li #login1").css("display") === "none"){
+		window.location.href="/letao/html/add_cart.html";
+	}else{
+		alert("请先登录！");
+		window.location.href="/letao/html/login.html"; 
+	}
+	
+}
 
 function index_img(url,tem,target){
 	$(function(){

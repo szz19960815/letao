@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>add_cart</title>
+	<link rel="stylesheet" type="text/css" href="/letao/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/letao/css/add_cart.css">
+	<link rel="stylesheet" type="text/css" href="/letao/css/footer.css">
+</head>
+<body>
+	<div class="header"></div>
+	<div class="content">
+		<div class="left">
+			<div class="img_show">
+				<div class="big_img"><img src="/letao/img/zone1_big.jpg"></div>
+				<ul class="small_img">
+					<li><a><img src="/letao/img/zone1_big.jpg"></a></li>
+					<li><a><img src="/letao/img/zone2_big.jpg"></a></li>
+					<li><a><img src="/letao/img/zone3_big.jpg"></a></li>
+					<li><a><img src="/letao/img/zone4_big.jpg"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="pro_detail">
+				<h2>清仓特卖 男式 休闲鞋（款式随机）</h2>
+				<div class="goods_time">
+					<em>正在秒杀</em>
+					<span><img src="/letao/img/time_icon.png"></span>
+					<p style="display: inline-block;">
+						距离结束：
+						<span style="font-size: 17px;" id="days"></span>天
+						<span style="font-size: 17px;" id="hours"></span>时
+						<span style="font-size: 17px;" id="minutes"></span>分
+						<span style="font-size: 17px;" id="seconds"></span>秒
+					</p>
+				</div>
+				<div class="pro_price">
+					<span style="display: inline-block;width: 80px;text-align: left;">销售价：</span><i style="color: #E31436;font-style:normal">￥</i><strong>29.9</strong><a>市场价：￥<span>569.0</span></a>
+				</div>
+				<div class="pro_color">
+					<span style="display: inline-block;width: 80px;text-align: left;">颜色：</span>
+					<a style="display:inline-block">随机发货</a>
+				</div>
+				<div class="pro_amount">
+					<span style="display: inline-block;width: 80px;text-align: left;">数量：</span>
+					<div class="change_amount">
+						<span class="reduce">-</span>
+						<input type="text" id="amounts" value="1">
+						<span class="add">+</span>
+					</div>
+					<a>限购：1</a>
+				</div>
+				<div class="pro_btn">
+					<button type="submit" id="addTo_cart">加入购物车</button>
+					<button type="submit" id="buy">立即购买</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+	<script type="text/javascript" src="/letao/lib/jquery/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="/letao/lib/arttemplate/template.js"></script>
+	<script type="text/javascript" src="/letao/lib/require/require.js" data-main="/letao/js/add_cart.js"></script>
+</body>
+</html>
